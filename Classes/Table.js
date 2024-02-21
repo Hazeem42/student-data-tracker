@@ -19,6 +19,7 @@ export class Table {
    * 
    * @param {*} columns : Array of string where each string represents a column name. SHould match with object key
    */
+  
   setColumns(columns) {
     this.columns = columns;
   }
@@ -37,7 +38,7 @@ export class Table {
    */
   addColumn(column) {
     this.columns.push(column);
-  }
+  };
 
   /**
    * 
@@ -45,7 +46,7 @@ export class Table {
    */
   addRow(data) {
     this.rows.push(data);
-  }
+  };
 
   /**
    * Draw the table in the app element

@@ -9,9 +9,13 @@
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  text-transform: capitalize;
 }
 
 #app table td {
   border: 1px solid #ddd;
   padding: 8px;
+  text-transform: capitalize;
 }
+
+   

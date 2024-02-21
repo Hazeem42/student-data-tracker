@@ -5,14 +5,16 @@
 export class Student {
   constructor(name) {
     this.name = name;
-
+    
     this.properties = [];
+
+    //this.properties = label, value;
 
     // Property { label, value }[]
   }
 
   addProperty(label, value) {
-    this.properties.push({ label, value });
+    this.properties.push({label, value});
   }
 
   getStudentData() {
@@ -31,4 +33,5 @@ export class Student {
   getProperties() {
     console.log(this.properties);
   }
+  
 }
