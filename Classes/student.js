@@ -6,25 +6,34 @@ export class Student {
   constructor(name) {
     this.name = name;
     
-    this.properties = [];
+    this.properties = {};
 
     //this.properties = label, value;
 
     // Property { label, value }[]
   }
 
-  addProperty(label, value) {
-    this.properties.push({label, value});
+  addProperty() {
+    const properties = {
+      label, value
+    };
+
+
+    for (let x of this.properties) {
+      properties [x.label] = x.value;
+    }
+
+    return properties;
   }
 
-  getStudentData() {
+ /* getStudentData() {
     const data = { 
       name: this.name, 
       age: this.age,
     };
     
     for (let x of this.properties) {
-      data[x.label] = x.value;
+      data (x.label) = x.value;
     }
 
     return data;
@@ -32,6 +41,6 @@ export class Student {
 
   getProperties() {
     console.log(this.properties);
-  }
+  } */
   
 }
